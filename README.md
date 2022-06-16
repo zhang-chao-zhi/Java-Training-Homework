@@ -5,7 +5,7 @@
 - 成绩处理
 
 **B.使用冒泡排序法对用户输入的字符串进行排列（按照ASCII码从大到小）。**
-![image](https://user-images.githubusercontent.com/66006636/174013056-8bf7a00d-0452-4c3e-8f4d-e6ed4859bcc5.png)
+[![image](https://user-images.githubusercontent.com/66006636/174013056-8bf7a00d-0452-4c3e-8f4d-e6ed4859bcc5.png)](https://www.runoob.com/wp-content/uploads/2019/03/bubbleSort.gif)
 ### 第二周
 **A.例程**
 - 打造一个小超市（方法，返回值，参数）
