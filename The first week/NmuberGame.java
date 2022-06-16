@@ -11,27 +11,27 @@ public class NmuberGame {
             if(player<1||player>100){
                 continue;
             }
-            boolean result = BiDaXiao(npc,player);
+            boolean result = BiDaXiao(npc,player,count);
+            count++;
             if(result==true){
                 System.out.print("程序结束!");
                 break;
-            }else if(count>9){
-                System.out.println("你已经试了10次");break;
+            }else if(count>10){
+                System.out.println("不能答了，你已经试了10次");break;
             }else{
-                System.out.println("继续来...");
+                System.out.println("剩余" + (11-count) + "次");
             }
-            count++;
         }
     }
-    public static boolean BiDaXiao(int npc,int player){
-        if(npc>player){
+    public static boolean BiDaXiao(int npc,int player,int number){
+        if(npc>player && number<10){
             System.out.print("小了,再大一点,");
             return false;
-        }else if(npc<player){
+        }else if(npc<player && number<10){
             System.out.print("大了,再小一点,");
             return false;
         }else if(npc==player){
-            System.out.println("对了！！！");
+            System.out.print("对了,");
             return true;
         }else{
             return false;
