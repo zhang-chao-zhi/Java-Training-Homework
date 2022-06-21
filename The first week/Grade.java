@@ -98,7 +98,6 @@ public class Grade {
                             }
                         }
                     }
-                    // 视频中代码有错误，应该是使用 bestYear 而不是 year， 鸣谢 @zZGod 帮忙揪出 bug 一只。
                     System.out.println("所有年度最好成绩为第" + (bestYear + 1) + "年的" + names[bestScore] + "，成绩为" + scores[bestYear][bestScore] + "。");
                     break;
                 case 4:
