@@ -49,6 +49,7 @@ public class Grade {
 
             int year = 0;
             switch (oprtId) {
+                    
                 case 1:
                     // 让用户输入指定的年份
                     System.out.println("请输入要计算第几年的最好成绩");
@@ -70,6 +71,7 @@ public class Grade {
                     }
                     System.out.println("第" + (year + 1) + "年成绩最好的科目为" + names[bestOfYearScoreId] + "，成绩为" + scores[year][bestOfYearScoreId] + "。");
                     break;
+                    
                 case 2:
                     System.out.println("请输入要计算第几年的平均成绩");
                     year = scanner.nextInt();
@@ -86,6 +88,7 @@ public class Grade {
                     double avgOfYear = totalCountForAvg / totalScoreCount;
                     System.out.println("第" + (year + 1) + "年的平均成绩为" + avgOfYear + "。");
                     break;
+                    
                 case 3:
                     int bestYear = 0;
                     int bestScore = 0;
@@ -100,6 +103,7 @@ public class Grade {
                     }
                     System.out.println("所有年度最好成绩为第" + (bestYear + 1) + "年的" + names[bestScore] + "，成绩为" + scores[bestYear][bestScore] + "。");
                     break;
+                    
                 case 4:
                     System.out.println("请输入科目编号");
                     int subjectId = scanner.nextInt();
@@ -116,8 +120,8 @@ public class Grade {
                         }
                     }
                     System.out.println("第" + (year + 1) + "年度" + names[subjectId] + "成绩最好，为" + scores[year][subjectId] + "。");
-
                     break;
+                    
                 default:
                     cont = false;
                     System.out.println("不支持：" + oprtId + "， 程序结束。");
