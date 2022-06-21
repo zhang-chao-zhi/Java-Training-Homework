@@ -8,11 +8,16 @@ public class GuessNumber {
         Input input = new Input();
         // 创建Scanner从控制台读取输入
         Scanner in = new Scanner(System.in);
-        System.out.println("=================== 猜 数 字 ===================");
-        while (true){
-            int number = in.nextInt();
-            String answer = input.answer(number);
-            System.out.println(answer);
+        System.out.println("=================== 猜 数 字 游 戏===================");
+        int guessTotal = 5;
+        while (guessTotal > 0){
+            int answer = in.nextInt();
+            guessTotal--;
+            String result = input.result(answer,guessTotal);
+            System.out.println(result);
+            if (result == ",游戏结束！"){
+                guessTotal = 0;
+            }
         }
     }
 }
