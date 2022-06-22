@@ -12,11 +12,15 @@ public class GuessNumber {
         int guessTotal = 5;
         while (guessTotal > 0){
             int answer = in.nextInt();
-            guessTotal--;
-            String result = input.result(answer,guessTotal);
-            System.out.println(result);
-            if (result == ",游戏结束！"){
+            if(answer == -1){
                 guessTotal = 0;
+            } else {
+                guessTotal--;
+                String result = input.result(answer, guessTotal);
+                System.out.println(result);
+                if (result == ",游戏结束！") {
+                    guessTotal = 0;
+                }
             }
         }
     }
