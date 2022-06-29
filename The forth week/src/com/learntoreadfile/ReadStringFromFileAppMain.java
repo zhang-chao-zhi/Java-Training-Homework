@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class ReadStringFromFileAppMain {
-    private static final String SOURCE_FILE_NAME = "测试文件.txt";
+    private static final String SOURCE_FILE_NAME = "test.txt";
 
     public static void main(String[] args) throws IOException {
         File sourceFile = new File("." + File.separator + SOURCE_FILE_NAME);
