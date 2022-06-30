@@ -19,13 +19,13 @@ public class WriteToFilesAppMain {
     }
 
     private static void writeToFile(File targetFile) throws IOException {
-        // TODO try with resource，帮我们搞定close
+
         try (
-            //TODO 建立一个从文件到程序的byte数据传输流
+
             FileOutputStream fos = new FileOutputStream(targetFile);
-            // TODO 建立一个可以消费inputstream（应该是outputstream）的writer，并指定字符集，这样就可以一个个的写入字符了
+
             OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
-            // TODO 使用PrintWriter，可以方便的写入一行字符
+
             PrintWriter pw = new PrintWriter(osw);
         ) {
 
