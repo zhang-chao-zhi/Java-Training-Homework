@@ -8,7 +8,7 @@ public class WR implements Write,Read{
 
     private static final Scanner in = new Scanner(System.in);
 
-    @override
+    @Override
     public File createFile() throws IOException {
         System.out.println("请输入文件名：");
         String fileName = in.nextLine().trim();
@@ -20,7 +20,7 @@ public class WR implements Write,Read{
         return f;
     }
 
-    @override
+    @Override
     public void writeToFile(File targetFile) throws IOException {
 
         try (
@@ -49,7 +49,7 @@ public class WR implements Write,Read{
         }
     }
 
-    @override
+    @Override
     public void classicWay(File sourceFile) throws IOException {
         System.out.println("---------经典的处理方式-------------");
         try (
@@ -66,7 +66,7 @@ public class WR implements Write,Read{
         }
     }
 
-    @override
+    @Override
     public void coolerWay(File sourceFile) throws IOException {
         System.out.println("---------更好的处理方式-------------");
 
