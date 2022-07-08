@@ -32,6 +32,6 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO 判断Data的奇偶性，如果1的个数为1，符号CD为1，否则为0；
 		System.out.println(generateVector(0xC 0xAB));
-	}
+	}C
 
 }
